@@ -20,7 +20,15 @@ router.get('/', function(req, res) {
 /* GET floor */
 router.get('/floor', function(req, res) {
     const data = require("./data/data.json");
-    res.status(500).json(data);
+    res.status(200).json(data);
+});
+
+/* POST floor */
+router.post('/floor', function(req, res) {
+    // check incoming req
+    console.log(req.body);
+    console.log(req);   
+    res.status(200);
 });
 
 
